@@ -10,7 +10,7 @@ cybOS is not intended to be just another desktop application or dashboard.
 
 ### cybOS v0.7.1 — macOS
 
-**[Download cybOS v0.7.1 (.zip)](https://github.com/c1cad4/cybOS/releases/tag/v0.7.1)**
+**[Download cybOS v0.7.2 (.zip)](https://github.com/c1cad4/cybOS/releases/tag/v0.7.2)**
 
 Native macOS technical beta. The release contains the packaged cybOS application.
 
@@ -484,7 +484,7 @@ The project is being developed as a native desktop application.
 
 # ⚡ Current Status
 
-**cybOS v0.7.1 is an active technical beta release.**
+**cybOS v0.7.2 is an active technical beta release.**
 
 The native interface and core architecture are being developed incrementally.
 
