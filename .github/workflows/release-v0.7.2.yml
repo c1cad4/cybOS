@@ -37,6 +37,13 @@ jobs:
           ls -lh "$zip_path"
           unzip -t "$zip_path"
 
+      - name: Create SHA-256 checksum
+        run: |
+          set -euo pipefail
+          zip_path=$(find ./cybOS-demo/dist -maxdepth 1 -name '*.zip' -print -quit)
+          shasum -a 256 "$zip_path" > ./cybOS-demo/dist/SHA256SUMS.txt
+          cat ./cybOS-demo/dist/SHA256SUMS.txt
+
       - name: Publish GitHub release v0.7.2
         uses: softprops/action-gh-release@v2
         with:
@@ -44,4 +51,6 @@ jobs:
           target_commitish: ${{ github.sha }}
           name: cybOS v0.7.2
           generate_release_notes: true
-          files: ./cybOS-demo/dist/*.zip
+          files: |
+            ./cybOS-demo/dist/*.zip
+            ./cybOS-demo/dist/SHA256SUMS.txt
