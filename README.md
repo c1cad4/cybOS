@@ -1,10 +1,19 @@
-# cybOS v0.6.0
+# cybOS v0.7.1
 
 ## The foundation of a new cyber-physical ecosystem
 
 **cybOS** is a native Rust desktop environment designed to connect **AI, robotics, people, farms, knowledge, communication, decentralized networks and digital archives** into one evolving ecosystem.
 
 cybOS is not intended to be just another desktop application or dashboard.
+
+## 📦 Download
+
+### cybOS v0.7.1 — macOS
+
+**[Download cybOS v0.7.1 (.zip)](https://github.com/c1cad4/cybOS/releases/tag/v0.7.1)**
+
+Native macOS technical beta. The release contains the packaged cybOS application.
+
 
 It is being developed as the foundation for a system where digital intelligence can eventually interact directly with the physical world.
 
@@ -475,7 +484,7 @@ The project is being developed as a native desktop application.
 
 # ⚡ Current Status
 
-**cybOS v0.6.0 is an active development release.**
+**cybOS v0.7.1 is an active technical beta release.**
 
 The native interface and core architecture are being developed incrementally.
 
