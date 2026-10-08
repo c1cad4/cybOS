@@ -1,0 +1,45 @@
+name: cybOS v0.7.1 release mirror
+
+on:
+  push:
+    branches:
+      - "release/v0.7.1"
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Wait for cybOS-demo v0.7.1 release
+        shell: bash
+        run: |
+          set -euo pipefail
+          for i in {1..90}; do
+            json="$(curl -fsSL https://api.github.com/repos/c1cad4/CybOS-demo/releases/latest)"
+            tag="$(printf '%s' "$json" | python3 -c 'import json,sys; print(json.load(sys.stdin).get("tag_name", ""))')"
+            if [ "$tag" = "v0.7.1" ]; then
+              url="$(printf '%s' "$json" | python3 -c 'import json,sys; d=json.load(sys.stdin); a=[x["browser_download_url"] for x in d.get("assets",[]) if x.get("name","").endswith(".zip")]; print(a[0] if a else "")')"
+              if [ -n "$url" ]; then
+                echo "Found: $url"
+                curl -fL "$url" -o cybOS-0.7.1-macOS.zip
+                test -s cybOS-0.7.1-macOS.zip
+                exit 0
+              fi
+            fi
+            echo "Release not ready yet; checking again..."
+            sleep 10
+          done
+          echo "v0.7.1 asset was not published in time" >&2
+          exit 1
+
+      - name: Publish GitHub release v0.7.1
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: v0.7.1
+          target_commitish: ${{ github.sha }}
+          name: cybOS v0.7.1
+          generate_release_notes: true
+          files: cybOS-0.7.1-macOS.zip
