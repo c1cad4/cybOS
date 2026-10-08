@@ -56,3 +56,5 @@ jobs:
             ./cybOS-demo/dist/SHA256SUMS.txt
 
 # Release source is pinned to the latest verified CybOS-demo release branch.
+
+# Source branch is updated only after the corresponding CybOS-demo CI passes.
