@@ -54,3 +54,5 @@ jobs:
           files: |
             ./cybOS-demo/dist/*.zip
             ./cybOS-demo/dist/SHA256SUMS.txt
+
+# Release source is pinned to the latest verified CybOS-demo release branch.
