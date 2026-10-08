@@ -1,0 +1,43 @@
+name: cybOS v0.7.2 release
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: macos-latest
+
+    steps:
+      - name: Checkout release repository
+        uses: actions/checkout@v4
+
+      - name: Install Rust
+        uses: dtolnay/rust-toolchain@stable
+
+      - name: Checkout cybOS application source
+        run: git clone --depth 1 --branch release/v0.7.2 https://github.com/c1cad4/CybOS-demo.git cybOS-demo
+
+      - name: Package macOS app
+        run: bash ./cybOS-demo/scripts/package_macos.sh
+
+      - name: Verify ZIP
+        run: |
+          set -euo pipefail
+          zip_path=$(find ./cybOS-demo/dist -maxdepth 1 -name '*.zip' -print -quit)
+          test -n "$zip_path"
+          ls -lh "$zip_path"
+          unzip -t "$zip_path"
+
+      - name: Publish GitHub release v0.7.2
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: v0.7.2
+          target_commitish: ${{ github.sha }}
+          name: cybOS v0.7.2
+          generate_release_notes: true
+          files: ./cybOS-demo/dist/*.zip
