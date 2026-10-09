@@ -82,7 +82,7 @@
     },
     {
       "name": "CybAgents",
-      "commit": "71084e29442b6c8a161ca74e1d9cad834f0c3026"
+      "commit": "1c927263a37e8973cb41877c0fe3765ea08f8cb5"
     },
     {
       "name": "CybExplorer",
@@ -146,7 +146,7 @@
     },
     {
       "name": "CybCore",
-      "commit": "fecaf1c0b76735c745011f535aec54fdea76a592"
+      "commit": "583e10807ef94c2cf6da584c1fba74461b9a653f"
     }
   ]
 }
