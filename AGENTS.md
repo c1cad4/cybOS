@@ -4,7 +4,7 @@ Applies to the whole cybOS repository. Read any more specific AGENTS.md before e
 
 ## Purpose and sources of truth
 
-- This repository owns the ecosystem catalog, pinned revisions, bootstrap tooling and static project map.
+- This repository owns the ecosystem catalog, pinned revisions, bootstrap tooling, unified cyb.py installer/launcher and static project map.
 - Native desktop implementation belongs to c1cad4/CybOS-demo; agent HTTP API belongs to c1cad4/CybCore.
 - Read ecosystem.json for component roles, test commands and dependencies; ecosystem.lock.json for exact sibling revisions.
 - Read docs/ARCHITECTURE.md and docs/DEVELOPMENT.md before changing integration behavior.
@@ -14,7 +14,10 @@ Applies to the whole cybOS repository. Read any more specific AGENTS.md before e
 
 - Python 3.12+ and Git are sufficient for this repository's tooling. There is no Python dependency installation step here.
 - Run from repository root: python3 -m unittest discover -s tests -v.
-- Preview the catalog: python3 -m http.server 8004 --bind 127.0.0.1.
+- Unified workflow: python3 cyb.py setup --profile core; python3 cyb.py doctor --profile core; python3 cyb.py test --profile core; python3 cyb.py run.
+- Desktop: setup/test --profile desktop, then run CybOS-demo. All implemented components: --profile all; planned entries are excluded.
+- Preview the catalog: python3 cyb.py serve cybOS --port 8004.
+- Read docs/INSTALL.md for runtime prerequisites and limitations.
 - Bootstrap siblings when required: python3 tools/bootstrap.py. This uses the network and creates sibling directories.
 - Verify pinned sibling HEADs: python3 tools/bootstrap.py --verify. This is not a working-tree cleanliness check.
 - Use each component's own instructions and test command for changes outside this repository.
