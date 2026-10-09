@@ -1,0 +1,80 @@
+{
+  "repositories": [
+    {
+      "name": "CybOS-demo",
+      "commit": "16ac9c490d1c5560e411b95cdf061aabb14e07b8"
+    },
+    {
+      "name": "robotcyb-core",
+      "commit": "8d88584b886f1f97d81a033e79703398cc6ec650"
+    },
+    {
+      "name": "robotcyb",
+      "commit": "54e186003df98d6a9834f025e9db72cdfd574e3b"
+    },
+    {
+      "name": "soul",
+      "commit": "5a19bfc0912f8c51d80722684debbad0668e3f17"
+    },
+    {
+      "name": "soul-demo",
+      "commit": "d464082f415d9b8883c83953a97cdab066e67ac4"
+    },
+    {
+      "name": "cybguard",
+      "commit": "0035db4a7b07ed5936de95889ec46881b973082c"
+    },
+    {
+      "name": "immunocybchain",
+      "commit": "3963f9e300d9f1a0979ac4287b91e35a9ac2b0af"
+    },
+    {
+      "name": "cybnet",
+      "commit": "08e19dce9339ad3ae062c46c2105550084075945"
+    },
+    {
+      "name": "cybchat",
+      "commit": "b1ebf2bb0ac15f1bf812d0cb3b4e5e1a8cc722db"
+    },
+    {
+      "name": "CybBrowser",
+      "commit": "b807057623c48127e7e75bbdca0528f7743d250e"
+    },
+    {
+      "name": "cybweb",
+      "commit": "13efba785ee8eb1b54ebfe4deccc3477dbfc058e"
+    },
+    {
+      "name": "cybdex",
+      "commit": "fd55bfc8ecaa9687f9fd8d71bd3f4fc9492d44c9"
+    },
+    {
+      "name": "RobotCYB-Price-Tracker",
+      "commit": "8003ed31c2043ca01cd7664e37e4cd740b89ccdc"
+    },
+    {
+      "name": "cybchain",
+      "commit": "d4172db0fa7e9d27b0c4a90979f82d2242bf25fb"
+    },
+    {
+      "name": "go-cyber",
+      "commit": "df65c4f2853eafb149fe2b6781f894053e2e0a68"
+    },
+    {
+      "name": "cybbee",
+      "commit": "f038465c532a6e6a7bbbfb0ccab1bd20f2f6d3ad"
+    },
+    {
+      "name": "Robotcyb-game",
+      "commit": "38f0ae099815651dec11f9ed0200fcaf21e4a7c8"
+    },
+    {
+      "name": "cybLaunch",
+      "commit": "185f18a83777d1e6a22c8bb63a2ef1ce18c90196"
+    },
+    {
+      "name": "cyb",
+      "commit": "a7c58198e647303b3f87ab8bf38abed712eefed9"
+    }
+  ]
+}

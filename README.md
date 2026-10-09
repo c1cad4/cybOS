@@ -1,3 +1,17 @@
+# cybOS · Ecosystem workspace
+
+Точка сборки RobotCYB, памяти, связи, рынков и физического мира. [Каталог](ecosystem.json) · [Архитектура](docs/ARCHITECTURE.md) · [Разработка](docs/DEVELOPMENT.md).
+
+```bash
+python3 tools/bootstrap.py
+python3 ../cybLaunch/launcher.py test all
+python3 -m http.server 8004 --bind 127.0.0.1
+```
+
+`index.html` — интерактивная карта проектов с поиском. `ecosystem.lock.json` — фиксированные ревизии. Для нативного стенда используйте соседний `CybOS-demo`.
+
+---
+
 # cybOS v0.7.1
 
 ## The foundation of a new cyber-physical ecosystem
@@ -533,3 +547,8 @@ And where digital technology ultimately connects back to the physical world.
 **Mind → Brain → Machine → Farm → Network → Archive**
 
 Built by **Cicada**.
+
+
+## Экосистема cybOS
+
+[Роль проекта, команды и границы](docs/ECOSYSTEM.md) · [Карта всех компонентов](https://github.com/c1cad4/cybOS).

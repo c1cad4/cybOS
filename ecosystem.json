@@ -1,0 +1,311 @@
+{
+  "schema_version": 1,
+  "repositories": [
+    {
+      "name": "cybOS",
+      "role": "Сборка всей экосистемы: карта проектов, документация и воспроизводимые рабочие команды",
+      "category": "system",
+      "status": "orchestrator",
+      "url": "https://github.com/c1cad4/cybOS",
+      "test_command": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests"
+      ],
+      "depends_on": [],
+      "web_entry": "index.html"
+    },
+    {
+      "name": "CybOS-demo",
+      "role": "Нативный рабочий стол и тестовый стенд, собирающий самостоятельные компоненты",
+      "category": "system",
+      "status": "application",
+      "url": "https://github.com/c1cad4/CybOS-demo",
+      "test_command": [
+        "cargo",
+        "test",
+        "--locked",
+        "-j",
+        "4"
+      ],
+      "depends_on": [
+        "robotcyb-core",
+        "cybnet",
+        "cybguard",
+        "cybbee",
+        "cybchain",
+        "cybweb",
+        "CybBrowser",
+        "cybdex",
+        "soul",
+        "immunocybchain"
+      ],
+      "web_entry": "index.html"
+    },
+    {
+      "name": "robotcyb-core",
+      "role": "Контракты рабочих задач, дедлайны, Modbus и энергетическая политика",
+      "category": "intelligence",
+      "status": "library",
+      "url": "https://github.com/c1cad4/robotcyb-core",
+      "test_command": [
+        "cargo",
+        "test",
+        "--locked",
+        "-j",
+        "4"
+      ],
+      "depends_on": []
+    },
+    {
+      "name": "robotcyb",
+      "role": "Публичная история RobotCYB и входная страница проекта",
+      "category": "intelligence",
+      "status": "website",
+      "url": "https://github.com/c1cad4/robotcyb",
+      "test_command": null,
+      "depends_on": [],
+      "limitation": "Проверка интерфейса выполняется браузерным smoke-тестом.",
+      "web_entry": "index.html"
+    },
+    {
+      "name": "soul",
+      "role": "Типы локальной памяти, фактов обучения и графа знаний",
+      "category": "intelligence",
+      "status": "library",
+      "url": "https://github.com/c1cad4/soul",
+      "test_command": [
+        "cargo",
+        "test",
+        "--locked",
+        "-j",
+        "4"
+      ],
+      "depends_on": []
+    },
+    {
+      "name": "soul-demo",
+      "role": "Интерактивная WebGL-визуализация: отдельный визуальный эксперимент",
+      "category": "experience",
+      "status": "demo",
+      "url": "https://github.com/c1cad4/soul-demo",
+      "test_command": null,
+      "depends_on": [],
+      "limitation": "Нужен WebGL-браузер; микрофон требует разрешения.",
+      "web_entry": "index.html"
+    },
+    {
+      "name": "cybguard",
+      "role": "Проверка ограниченных действий локального агента",
+      "category": "security",
+      "status": "library",
+      "url": "https://github.com/c1cad4/cybguard",
+      "test_command": [
+        "cargo",
+        "test",
+        "--locked",
+        "-j",
+        "4"
+      ],
+      "depends_on": []
+    },
+    {
+      "name": "immunocybchain",
+      "role": "Идентичность сообщений и ограниченное окно защиты от повторов",
+      "category": "security",
+      "status": "library",
+      "url": "https://github.com/c1cad4/immunocybchain",
+      "test_command": [
+        "cargo",
+        "test",
+        "--locked",
+        "-j",
+        "4"
+      ],
+      "depends_on": []
+    },
+    {
+      "name": "cybnet",
+      "role": "Контракты mesh-пакетов, TTL и конфигурации VPN",
+      "category": "network",
+      "status": "library",
+      "url": "https://github.com/c1cad4/cybnet",
+      "test_command": [
+        "cargo",
+        "test",
+        "--locked",
+        "-j",
+        "4"
+      ],
+      "depends_on": []
+    },
+    {
+      "name": "cybchat",
+      "role": "Самостоятельное приложение общения для iOS/macOS",
+      "category": "network",
+      "status": "platform-limited",
+      "url": "https://github.com/c1cad4/cybchat",
+      "test_command": null,
+      "depends_on": [],
+      "limitation": "Требуется macOS/iOS SDK и Xcode."
+    },
+    {
+      "name": "CybBrowser",
+      "role": "Ограниченный загрузчик документов: HTTP, IPFS/IPNS и Arweave",
+      "category": "network",
+      "status": "library",
+      "url": "https://github.com/c1cad4/CybBrowser",
+      "test_command": [
+        "cargo",
+        "test",
+        "--locked",
+        "-j",
+        "4"
+      ],
+      "depends_on": [
+        "cybweb"
+      ]
+    },
+    {
+      "name": "cybweb",
+      "role": "Извлечение текста HTML и ранжирование источников для поиска",
+      "category": "network",
+      "status": "library",
+      "url": "https://github.com/c1cad4/cybweb",
+      "test_command": [
+        "cargo",
+        "test",
+        "--locked",
+        "-j",
+        "4"
+      ],
+      "depends_on": []
+    },
+    {
+      "name": "cybdex",
+      "role": "Данные рынков Solana: поиск пар и свечи, без исполнения обменов",
+      "category": "markets",
+      "status": "library",
+      "url": "https://github.com/c1cad4/cybdex",
+      "test_command": [
+        "cargo",
+        "test",
+        "--locked",
+        "-j",
+        "4"
+      ],
+      "depends_on": [
+        "robotcyb-core"
+      ]
+    },
+    {
+      "name": "RobotCYB-Price-Tracker",
+      "role": "Браузерное расширение для общей цены токена и виджета",
+      "category": "markets",
+      "status": "extension",
+      "url": "https://github.com/c1cad4/RobotCYB-Price-Tracker",
+      "test_command": [
+        "npm",
+        "test"
+      ],
+      "depends_on": [],
+      "limitation": "Полная загрузка расширения требует браузера, разрешающего unpacked extensions."
+    },
+    {
+      "name": "cybchain",
+      "role": "Валидация значений внешних оракулов; консенсус остаётся в go-cyber",
+      "category": "markets",
+      "status": "library",
+      "url": "https://github.com/c1cad4/cybchain",
+      "test_command": [
+        "cargo",
+        "test",
+        "--locked",
+        "-j",
+        "4"
+      ],
+      "depends_on": []
+    },
+    {
+      "name": "go-cyber",
+      "role": "Полноценный Go-узел Cyber/Bostrom и локальная тестовая сеть",
+      "category": "markets",
+      "status": "application",
+      "url": "https://github.com/c1cad4/go-cyber",
+      "test_command": [
+        "go",
+        "test",
+        "-mod=readonly",
+        "-p",
+        "4",
+        "./..."
+      ],
+      "depends_on": []
+    },
+    {
+      "name": "cybbee",
+      "role": "Наблюдения фермы и пасеки с источником и временем",
+      "category": "physical",
+      "status": "library",
+      "url": "https://github.com/c1cad4/cybbee",
+      "test_command": [
+        "cargo",
+        "test",
+        "--locked",
+        "-j",
+        "4"
+      ],
+      "depends_on": []
+    },
+    {
+      "name": "Robotcyb-game",
+      "role": "Игровая симуляция фермы с ресурсами и проверяемыми правилами",
+      "category": "experience",
+      "status": "demo",
+      "url": "https://github.com/c1cad4/Robotcyb-game",
+      "test_command": [
+        "npm",
+        "test"
+      ],
+      "depends_on": [],
+      "web_entry": "index.html"
+    },
+    {
+      "name": "cybLaunch",
+      "role": "CLI для явного запуска проверок и статических приложений",
+      "category": "system",
+      "status": "tool",
+      "url": "https://github.com/c1cad4/cybLaunch",
+      "test_command": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests"
+      ],
+      "depends_on": []
+    },
+    {
+      "name": "cyb",
+      "role": "Самостоятельный upstream-runtime: локальный CLI и большой Bevy workspace",
+      "category": "system",
+      "status": "workspace-limited",
+      "url": "https://github.com/c1cad4/cyb",
+      "test_command": [
+        "cargo",
+        "test",
+        "--manifest-path",
+        "crates/cyb/Cargo.toml",
+        "--locked",
+        "-j",
+        "4"
+      ],
+      "depends_on": [],
+      "limitation": "Главный workspace требует отсутствующих соседних upstream-репозиториев; команда проверяет отдельный crates/cyb."
+    }
+  ]
+}
