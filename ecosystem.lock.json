@@ -2,7 +2,7 @@
   "repositories": [
     {
       "name": "CybOS-demo",
-      "commit": "16ac9c490d1c5560e411b95cdf061aabb14e07b8"
+      "commit": "76a5144fe150b4530e44c554eaa03cbe5a45dde4"
     },
     {
       "name": "robotcyb-core",
@@ -70,11 +70,83 @@
     },
     {
       "name": "cybLaunch",
-      "commit": "185f18a83777d1e6a22c8bb63a2ef1ce18c90196"
+      "commit": "2250c4160c5acbcdf61c70015defa975281efc67"
     },
     {
       "name": "cyb",
       "commit": "a7c58198e647303b3f87ab8bf38abed712eefed9"
+    },
+    {
+      "name": "CybSwarm",
+      "commit": "0dd6b2128c91e43ec254b3f4bb11e13029b54576"
+    },
+    {
+      "name": "CybAgents",
+      "commit": "71084e29442b6c8a161ca74e1d9cad834f0c3026"
+    },
+    {
+      "name": "CybExplorer",
+      "commit": "e0bf77e65bbefde378aeecd6ae0a5aa929b36535"
+    },
+    {
+      "name": "CybRegistry",
+      "commit": "c3fad6ab47706370602dad21b3fd062889dd4547"
+    },
+    {
+      "name": "CybIdentity",
+      "commit": "8ab3f6bcef9d45a1d3206a315000e039bafdb813"
+    },
+    {
+      "name": "CybMemory",
+      "commit": "ed7800fb13c2be63de22905021d57a1eb28d9199"
+    },
+    {
+      "name": "CybLab",
+      "commit": "05badbc2d02664cf10e08e6f563a1e6e59138d01"
+    },
+    {
+      "name": "CybMentor",
+      "commit": "182896b75c2a6b4db53b642134ca25a4ee96b6c1"
+    },
+    {
+      "name": "CybMissions",
+      "commit": "650d8a0cf4b59a49af43efc60faa9d7c1370854f"
+    },
+    {
+      "name": "CybWallet",
+      "commit": "b5e506cced83b89c628f1c15ed3b5c577697f926"
+    },
+    {
+      "name": "CybWorld",
+      "commit": "d366b345499d2cec36d016be85af07e0f261cd56"
+    },
+    {
+      "name": "CybRobot",
+      "commit": "c6b71fe15f6757adb70cdefc277822985590f3f1"
+    },
+    {
+      "name": "CybShield",
+      "commit": "8dbb5318023f4974f019d6365da75199feefed42"
+    },
+    {
+      "name": "CybTrust",
+      "commit": "709b9013e5b8e126c54808c5baa9d8d1626a14ff"
+    },
+    {
+      "name": "CybGrowth",
+      "commit": "7f9d74a15b02c502053933ed289d166a1193aa30"
+    },
+    {
+      "name": "CybBrain",
+      "commit": "259cf3467c25e1aab6f0a41019e32f67c5ec9aed"
+    },
+    {
+      "name": "CybMind",
+      "commit": "09d65827ef95f153e4cc637b4dcc17d61eaf3d44"
+    },
+    {
+      "name": "CybCore",
+      "commit": "fecaf1c0b76735c745011f535aec54fdea76a592"
     }
   ]
 }

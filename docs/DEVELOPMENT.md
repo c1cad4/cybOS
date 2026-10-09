@@ -39,3 +39,19 @@ CYBOS_DATA_DIR=/path/to/local/data cargo run --locked
 ## Проверки и поставка
 
 Проверяйте каждый изменённый компонент и приложение-интегратор. CI клонирует зависимости по фиксированным SHA. При изменении API сначала публикуется библиотечный коммит, затем обновляются pins интегратора. Не смешивайте ветку рабочего прототипа с выпуском для конечных пользователей. Публикация GitHub release, моделей или hardware firmware выполняется отдельной задачей.
+
+## Агенты и долговременная память
+
+```bash
+cd CybCore
+python3 scripts/bootstrap_components.py
+python3 -m venv .venv
+.venv/bin/python -m pip install -r requirements.lock.txt
+.venv/bin/python -m unittest discover -s tests -v
+.venv/bin/python run.py
+```
+
+Порт 8010, loopback. CybCore содержит UI, `/docs`, `/health`, `/agents`, `/tasks`.
+Запуск через cybLaunch: активируйте `.venv`, затем `python3 ../cybLaunch/launcher.py run CybCore`.
+Знания и идемпотентные результаты хранятся в SQLite; пользовательский реестр агентов сессионный.
+Другие новые компоненты имеют честный статус planned и пока не исполняются.

@@ -306,6 +306,229 @@
       ],
       "depends_on": [],
       "limitation": "Главный workspace требует отсутствующих соседних upstream-репозиториев; команда проверяет отдельный crates/cyb."
+    },
+    {
+      "name": "CybSwarm",
+      "role": "Координация и выполнение задач группами агентов",
+      "category": "intelligence",
+      "status": "library",
+      "url": "https://github.com/c1cad4/CybSwarm",
+      "test_command": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests"
+      ],
+      "depends_on": [
+        "CybAgents",
+        "CybRegistry",
+        "CybMemory"
+      ]
+    },
+    {
+      "name": "CybAgents",
+      "role": "сами агенты: их роли, инструменты, память в рамках задач, настройки, жизненный цикл и протоколы взаимодействия.",
+      "category": "intelligence",
+      "status": "library",
+      "url": "https://github.com/c1cad4/CybAgents",
+      "test_command": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests"
+      ],
+      "depends_on": []
+    },
+    {
+      "name": "CybExplorer",
+      "role": "Просмотр блоков и транзакций",
+      "category": "markets",
+      "status": "planned",
+      "url": "https://github.com/c1cad4/CybExplorer",
+      "test_command": null,
+      "depends_on": [],
+      "limitation": "Архитектурный проект; реализации и тестов пока нет."
+    },
+    {
+      "name": "CybRegistry",
+      "role": "Каталог и проверка агентов",
+      "category": "intelligence",
+      "status": "library",
+      "url": "https://github.com/c1cad4/CybRegistry",
+      "test_command": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests"
+      ],
+      "depends_on": []
+    },
+    {
+      "name": "CybIdentity",
+      "role": "Криптографическая идентичность участников",
+      "category": "security",
+      "status": "planned",
+      "url": "https://github.com/c1cad4/CybIdentity",
+      "test_command": null,
+      "depends_on": [],
+      "limitation": "Архитектурный проект; реализации и тестов пока нет."
+    },
+    {
+      "name": "CybMemory",
+      "role": "Хранение и поиск знаний",
+      "category": "intelligence",
+      "status": "library",
+      "url": "https://github.com/c1cad4/CybMemory",
+      "test_command": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests"
+      ],
+      "depends_on": []
+    },
+    {
+      "name": "CybLab",
+      "role": "Изолированные эксперименты",
+      "category": "experience",
+      "status": "planned",
+      "url": "https://github.com/c1cad4/CybLab",
+      "test_command": null,
+      "depends_on": [],
+      "limitation": "Архитектурный проект; реализации и тестов пока нет."
+    },
+    {
+      "name": "CybMentor",
+      "role": "Персональный ИИ-наставник",
+      "category": "intelligence",
+      "status": "planned",
+      "url": "https://github.com/c1cad4/CybMentor",
+      "test_command": null,
+      "depends_on": [],
+      "limitation": "Архитектурный проект; реализации и тестов пока нет."
+    },
+    {
+      "name": "CybMissions",
+      "role": "Полезные задания, обучение и подтверждение достижений",
+      "category": "experience",
+      "status": "planned",
+      "url": "https://github.com/c1cad4/CybMissions",
+      "test_command": null,
+      "depends_on": [],
+      "limitation": "Архитектурный проект; реализации и тестов пока нет."
+    },
+    {
+      "name": "CybWallet",
+      "role": "Отдельные требования к безопасности ключей, транзакций и тестового кошелька",
+      "category": "markets",
+      "status": "planned",
+      "url": "https://github.com/c1cad4/CybWallet",
+      "test_command": null,
+      "depends_on": [],
+      "limitation": "Архитектурный проект; реализации и тестов пока нет."
+    },
+    {
+      "name": "CybWorld",
+      "role": "Цифровой двойник мира: датчики, экосистемы, фермы и граф физических объектов.",
+      "category": "physical",
+      "status": "planned",
+      "url": "https://github.com/c1cad4/CybWorld",
+      "test_command": null,
+      "depends_on": [],
+      "limitation": "Архитектурный проект; реализации и тестов пока нет."
+    },
+    {
+      "name": "CybRobot",
+      "role": "Интеграция роботов, адаптеры оборудования, симуляция и безопасное управление.",
+      "category": "physical",
+      "status": "planned",
+      "url": "https://github.com/c1cad4/CybRobot",
+      "test_command": null,
+      "depends_on": [],
+      "limitation": "Архитектурный проект; реализации и тестов пока нет."
+    },
+    {
+      "name": "CybShield",
+      "role": "Криптография, идентичность, разрешения и безопасность всей экосистемы.",
+      "category": "security",
+      "status": "planned",
+      "url": "https://github.com/c1cad4/CybShield",
+      "test_command": null,
+      "depends_on": [],
+      "limitation": "Архитектурный проект; реализации и тестов пока нет."
+    },
+    {
+      "name": "CybTrust",
+      "role": "Репутация людей, агентов, роботов и узлов на основе проверенных достижений.",
+      "category": "security",
+      "status": "planned",
+      "url": "https://github.com/c1cad4/CybTrust",
+      "test_command": null,
+      "depends_on": [],
+      "limitation": "Архитектурный проект; реализации и тестов пока нет."
+    },
+    {
+      "name": "CybGrowth",
+      "role": "Развитие людей, обучение, персональные наставники и полезные миссии.",
+      "category": "experience",
+      "status": "planned",
+      "url": "https://github.com/c1cad4/CybGrowth",
+      "test_command": null,
+      "depends_on": [],
+      "limitation": "Архитектурный проект; реализации и тестов пока нет."
+    },
+    {
+      "name": "CybBrain",
+      "role": "Долговременная память, граф знаний, обучение и накопление опыта.",
+      "category": "intelligence",
+      "status": "planned",
+      "url": "https://github.com/c1cad4/CybBrain",
+      "test_command": null,
+      "depends_on": [],
+      "limitation": "Архитектурный проект; реализации и тестов пока нет."
+    },
+    {
+      "name": "CybMind",
+      "role": "Коллективный интеллект, рои ИИ-агентов, исследования и координация задач.",
+      "category": "intelligence",
+      "status": "planned",
+      "url": "https://github.com/c1cad4/CybMind",
+      "test_command": null,
+      "depends_on": [],
+      "limitation": "Архитектурный проект; реализации и тестов пока нет."
+    },
+    {
+      "name": "CybCore",
+      "role": "Серверная инфраструктура, API, узлы сети и координация сервисов.",
+      "category": "system",
+      "status": "application",
+      "url": "https://github.com/c1cad4/CybCore",
+      "test_command": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests"
+      ],
+      "depends_on": [
+        "CybAgents",
+        "CybRegistry",
+        "CybMemory",
+        "CybSwarm"
+      ],
+      "run_command": [
+        "python3",
+        "run.py"
+      ]
     }
   ]
 }

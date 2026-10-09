@@ -552,3 +552,12 @@ Built by **Cicada**.
 ## Экосистема cybOS
 
 [Роль проекта, команды и границы](docs/ECOSYSTEM.md) · [Карта всех компонентов](https://github.com/c1cad4/cybOS).
+
+## Новые компоненты
+
+Каталог теперь включает 38 публичных проектов. CybCore объединяет четыре
+работающих Python-компонента: CybAgents, CybRegistry, CybMemory и CybSwarm.
+Сквозной сценарий — запись и поиск знания с источником и сохранением после рестарта.
+Другие 13 новых проектов отмечены как planned.
+
+[Границы новых подсистем](docs/NEW_COMPONENTS.md) · [Запуск API](https://github.com/c1cad4/CybCore)

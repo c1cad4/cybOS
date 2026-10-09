@@ -1,6 +1,6 @@
 'use strict';
 const categories={all:'Все проекты',system:'Система',intelligence:'Разум и память',network:'Связь и Web',security:'Безопасность',markets:'Рынки и сеть',physical:'Физический мир',experience:'Демонстрации'};
-const statuses={orchestrator:'ИНТЕГРАТОР',application:'ПРИЛОЖЕНИЕ',library:'БИБЛИОТЕКА',website:'САЙТ',demo:'ДЕМО',extension:'РАСШИРЕНИЕ',tool:'ИНСТРУМЕНТ','platform-limited':'APPLE SDK','workspace-limited':'UPSTREAM WORKSPACE'};
+const statuses={planned:'В ПЛАНЕ',orchestrator:'ИНТЕГРАТОР',application:'ПРИЛОЖЕНИЕ',library:'БИБЛИОТЕКА',website:'САЙТ',demo:'ДЕМО',extension:'РАСШИРЕНИЕ',tool:'ИНСТРУМЕНТ','platform-limited':'APPLE SDK','workspace-limited':'UPSTREAM WORKSPACE'};
 let projects=[],category='all';
 function render(){
  const query=document.getElementById('search').value.trim().toLocaleLowerCase('ru');
