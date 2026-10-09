@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="340" viewBox="0 0 1200 340" role="img" aria-labelledby="title desc">
+  <title id="title">cybOS — CicadaFarm and RobotCYB</title>
+  <desc id="desc">Dark blue banner with a mint network linking intelligence, knowledge and the physical world.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#091522"/><stop offset="1" stop-color="#142b35"/></linearGradient>
+    <radialGradient id="glow"><stop stop-color="#6dd6b0" stop-opacity=".16"/><stop offset="1" stop-color="#6dd6b0" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="1200" height="340" rx="24" fill="url(#bg)"/>
+  <circle cx="958" cy="160" r="200" fill="url(#glow)"/>
+  <path d="M790 205L850 95L958 160L1070 80M958 160L1060 250M958 160L840 275M850 95L1070 80M790 205L840 275" fill="none" stroke="#6dd6b0" stroke-opacity=".38" stroke-width="2"/>
+  <g fill="#102c31" stroke="#6dd6b0" stroke-width="2"><circle cx="790" cy="205" r="8"/><circle cx="850" cy="95" r="10"/><circle cx="1070" cy="80" r="8"/><circle cx="1060" cy="250" r="10"/><circle cx="840" cy="275" r="7"/></g>
+  <circle cx="958" cy="160" r="31" fill="#6dd6b0"/><circle cx="958" cy="160" r="47" fill="none" stroke="#6dd6b0" stroke-opacity=".25"/>
+  <text x="60" y="66" fill="#6dd6b0" font-family="Arial, sans-serif" font-size="14" letter-spacing="4">CICADAFARM / ROBOTCYB</text>
+  <text x="56" y="184" fill="#f0f6f8" font-family="Arial, sans-serif" font-weight="700" font-size="108">cyb<tspan fill="#6dd6b0">OS</tspan></text>
+  <text x="62" y="237" fill="#bdcfd5" font-family="Arial, sans-serif" font-size="22">Intelligence connected to the physical world.</text>
+  <text x="62" y="291" fill="#7f9ca5" font-family="Arial, sans-serif" font-size="13" letter-spacing="3">LOCAL FIRST · OPEN SOURCE · BUILT TO CONNECT</text>
+</svg>
