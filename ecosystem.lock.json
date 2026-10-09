@@ -90,7 +90,7 @@
     },
     {
       "name": "CybRegistry",
-      "commit": "c3fad6ab47706370602dad21b3fd062889dd4547"
+      "commit": "4aec895af61c7661dee225c2f71f95863a084b6b"
     },
     {
       "name": "CybIdentity",
@@ -146,7 +146,7 @@
     },
     {
       "name": "CybCore",
-      "commit": "583e10807ef94c2cf6da584c1fba74461b9a653f"
+      "commit": "303e13598ee49989feab61f74986f34bd86da125"
     }
   ]
 }

@@ -6,9 +6,10 @@
 
 ```bash
 git clone https://github.com/c1cad4/cybOS.git
-python3 cybOS/tools/bootstrap.py
-python3 cybLaunch/launcher.py list
-python3 cybLaunch/launcher.py test all
+cd cybOS
+python3 cyb.py setup --profile all
+python3 cyb.py list
+python3 cyb.py test --profile all
 ```
 
 `ecosystem.lock.json` содержит точные Git-ревизии. Bootstrap клонирует отсутствующие проекты, а существующие оставляет без reset/перезаписи. `--verify` проверяет HEAD существующих папок против lock-файла. При разработке изменения в соседних библиотеках видны стенду через Cargo path dependencies.
@@ -56,8 +57,9 @@ python3 -m venv .venv
 ```
 
 Порт 8010, loopback. CybCore содержит UI, `/docs`, `/health`, `/agents`, `/tasks`.
-Запуск через cybLaunch: активируйте `.venv`, затем `python3 ../cybLaunch/launcher.py run CybCore`.
-Знания и идемпотентные результаты хранятся в SQLite; пользовательский реестр агентов сессионный.
+Единый запуск без активации окружения: `python3 ../cybOS/cyb.py run CybCore`.
+Установка и диагностика описаны в [INSTALL.md](INSTALL.md).
+Знания и идемпотентные результаты хранятся в SQLite; пользовательский реестр агентов и их возможности также сохраняются в SQLite.
 Другие новые компоненты имеют честный статус planned и пока не исполняются.
 
 ## Локальный помощник

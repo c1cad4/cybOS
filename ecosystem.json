@@ -43,7 +43,14 @@
         "soul",
         "immunocybchain"
       ],
-      "web_entry": "index.html"
+      "web_entry": "index.html",
+      "run_command": [
+        "cargo",
+        "run",
+        "--locked",
+        "-j",
+        "4"
+      ]
     },
     {
       "name": "robotcyb-core",
