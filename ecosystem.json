@@ -215,8 +215,8 @@
       "status": "extension",
       "url": "https://github.com/c1cad4/RobotCYB-Price-Tracker",
       "test_command": [
-        "npm",
-        "test"
+        "node",
+        "--test"
       ],
       "depends_on": [],
       "limitation": "Полная загрузка расширения требует браузера, разрешающего unpacked extensions."
@@ -274,8 +274,8 @@
       "status": "demo",
       "url": "https://github.com/c1cad4/Robotcyb-game",
       "test_command": [
-        "npm",
-        "test"
+        "node",
+        "--test"
       ],
       "depends_on": [],
       "web_entry": "index.html"
