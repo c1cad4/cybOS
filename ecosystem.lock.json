@@ -147,6 +147,18 @@
     {
       "name": "CybCore",
       "commit": "303e13598ee49989feab61f74986f34bd86da125"
+    },
+    {
+      "name": "cicadafarm",
+      "commit": "5e55d02838fdd5f4816768898b1deffcafd86ada"
+    },
+    {
+      "name": "cicadafarm-game",
+      "commit": "7c049bbf8e400e8e3cebbcd177cba78e3eaa85d9"
+    },
+    {
+      "name": "Egolution",
+      "commit": "f8c8c8b621504361d844970d64343c302d20950c"
     }
   ]
 }

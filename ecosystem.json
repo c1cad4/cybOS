@@ -536,6 +536,48 @@
         "python3",
         "run.py"
       ]
+    },
+    {
+      "name": "cicadafarm",
+      "role": "Публичный цифровой двойник фермы: навигация, знания, демо наблюдений и вход в экосистему",
+      "category": "physical",
+      "status": "website",
+      "web_entry": "index.html",
+      "limitation": "Показания фермы и ответы чата демонстрационные; сайт не управляет оборудованием.",
+      "url": "https://github.com/c1cad4/cicadafarm",
+      "test_command": [
+        "node",
+        "--test"
+      ],
+      "depends_on": []
+    },
+    {
+      "name": "cicadafarm-game",
+      "role": "Канонический исходный код игры CicadaFarm Swarm: одиночный режим и мультиплеер",
+      "category": "experience",
+      "status": "application",
+      "web_entry": "index.html",
+      "limitation": "Мультиплеер и аккаунты требуют Cloudflare Durable Objects; статический просмотр проверяет браузерную часть.",
+      "url": "https://github.com/c1cad4/cicadafarm-game",
+      "test_command": [
+        "node",
+        "--test"
+      ],
+      "depends_on": []
+    },
+    {
+      "name": "Egolution",
+      "role": "Браузерная игра эволюции до RobotCYB с отдельным серверным учётом косметики",
+      "category": "experience",
+      "status": "application",
+      "web_entry": "public/index.html",
+      "limitation": "Аккаунты и платная косметика требуют отдельного backend; локальные тесты не подтверждают сетевые платежи.",
+      "url": "https://github.com/c1cad4/Egolution",
+      "test_command": [
+        "node",
+        "--test"
+      ],
+      "depends_on": []
     }
   ]
 }

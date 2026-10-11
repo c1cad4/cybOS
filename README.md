@@ -59,7 +59,7 @@ python3 cyb.py serve cybOS --port 8004
 - **Ферма и устройства:** [robotcyb-core](https://github.com/c1cad4/robotcyb-core) — worker/hardware контракты; [cybbee](https://github.com/c1cad4/cybbee) — наблюдения.
 - **Политики действий:** [cybguard](https://github.com/c1cad4/cybguard) и [immunocybchain](https://github.com/c1cad4/immunocybchain).
 
-Все проекты, команды проверок, ограничения и зависимости — в [машиночитаемом каталоге](ecosystem.json).
+Все проекты, команды проверок, ограничения и зависимости — в [машиночитаемом каталоге](ecosystem.json). [Описания и правила объединения](docs/REPOSITORY_MAP.md) охватывают текущие публичные репозитории, включая cicadafarm, cicadafarm-game и Egolution.
 
 ## Текущие границы
 
